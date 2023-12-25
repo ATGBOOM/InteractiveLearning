@@ -1,7 +1,9 @@
 import "./index.css";
-import UsingMouse from "./components/usingMouse";
+import UsingMouseDirections from "./components/usingMouseDirections";
 import Start from "./start";
+import UsingMouseButtons from "./components/usingMouseButtons";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import UsingKeyboard from "./components/usingKeyboard";
 function App() {
 
   return (
@@ -9,7 +11,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Start/>}> </Route>
-          <Route path="/mouse" element={<UsingMouse />}></Route>
+          <Route path="/mouse" element={<UsingMouseDirections />}></Route>
+          <Route path="/mousebtn" element={<UsingMouseButtons />}></Route>
+          <Route path="/key" element={<UsingKeyboard />}></Route>
         </Routes>
       </Router>
     </>

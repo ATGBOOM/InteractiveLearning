@@ -5,7 +5,7 @@ import checkboxEmpty from "../assets/checkboxEmpty.svg";
 import checkboxFilled from "../assets/checkboxFilled.png";
 import { Link, Outlet } from "react-router-dom";
 
-function UsingMouse() {
+function UsingMouseDirections() {
   const [right, setRight] = useState(checkboxEmpty);
   const [left, setLeft] = useState(checkboxEmpty);
   const [up, setUp] = useState(checkboxEmpty);
@@ -82,7 +82,7 @@ function UsingMouse() {
             </li>
           </ul>
         </div>
-        <Link to="/">
+        <Link to="/mousebtn">
           <button className="continuebtn"> Continue</button>
         </Link>
       </div>
@@ -91,4 +91,4 @@ function UsingMouse() {
   );
 }
 
-export default UsingMouse;
+export default UsingMouseDirections;

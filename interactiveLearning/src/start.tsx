@@ -14,7 +14,9 @@ function Start() {
           </Link>
         </div>
         <div className="column">
-          <img className="images" src={trackpad} alt="trackpad" />
+          <Link to="/mouse">
+            <img className="images" src={trackpad} alt="trackpad" />
+          </Link>
         </div>
       </div>
       <Outlet />

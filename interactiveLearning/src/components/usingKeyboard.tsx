@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 function UsingKeyboard() {
   const [enteredPhrase, setEnteredPhrase] = useState("");
@@ -36,7 +37,10 @@ function UsingKeyboard() {
         <div>
           <p>Correct phrase entered!</p>
           <br />
+          <Link to="/navigating">
           <button>continue</button>
+          </Link>
+          <Outlet/>
         </div>
       )}
       {buttonClicked && !isCorrect && <p>Incorrect phrase. Try again.</p>}
